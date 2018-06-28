@@ -1,0 +1,115 @@
+html{
+    background: url("../donuts-img/dex.bkd.jpg");
+}
+.ourImg{
+  display: block;
+  width:100%;
+  margin:0 auto;
+}
+.content{
+  padding: 50px 0;
+  margin: 0 100px;
+  font-family:  'Josefin Slab', serif;
+}
+
+.content a{
+  display: block;
+  text-align: center;
+  margin-top:110px;
+  text-decoration: none;
+  color: #7a4834;
+}
+.content a::after{
+  content: "v";
+  display: block;
+}
+.content a.backtotop::after{
+content: "^";
+display: block;
+}
+.content h2{
+  font-size:2.5em;
+  margin-bottom: 25px;
+  color: #7a4834;
+}
+.content p {
+  font-size:1.1em;
+  margin-bottom: 10px;
+  line-height: 32px;
+  color: #696469;
+}
+.contain{
+  display: flex;
+}
+.content .first{
+  margin-left: 215px;
+}
+.img-little{
+  height: 30vh;
+  width: 50%;
+  margin-right: 10px;
+}
+.img-child{
+    float: left;
+}
+.kid{
+  display: block;
+}
+@media (min-width:1050px){
+  .img-little{
+    width:auto;
+  }
+}
+
+@media (max-width:950px){
+  .contain{
+  display: flex;
+  flex-flow: column-reverse;
+  align-items: center;
+  }
+  .content .first {
+    margin-left: 0;
+  }
+  .content{
+    margin:0;
+  }
+.img-child{
+  float: none;
+}
+  .img-little {
+    width:auto;
+ }
+ @media (max-width:550px){
+   .content{
+     padding: 85px 20px;
+   }
+ }
+
+ @media (max-width:450px){
+   .content{
+    padding:15px;
+   }
+   .content h2 {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    margin-top: 70px;
+}
+}
+@media (max-width:200px){
+  .content{
+    font-size: 0.7em;
+  }
+}
+ @media (max-width:100px){
+   .content{
+     padding: 10px;
+  }
+   .zero,.first,.two,.three{
+     font-size: 0.1em;
+  }
+   .content h2{
+   margin-top: 72px;
+   font-size: 1em;
+  }
+
+}

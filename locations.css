@@ -1,0 +1,79 @@
+html{
+  background: url("file:///Users/Marisol/Documents/donuts-site/donuts-img/dex.bkd.jpg");
+}
+.locImg{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  /* padding-top: 72px; */
+}
+
+.container{
+  display: flex;
+  flex-flow: row;
+  padding:50px;
+  justify-content: space-evenly;
+}
+.locContainer{
+  flex-basis:40%;
+}
+.locContainer h2{
+  font-size: 2.5em;
+  line-height: 100px;
+  text-align: center;
+}
+.locContainer p{
+  font-size: 1.1em;
+  word-spacing: 3px;
+  line-height: 30px;
+}
+.locUl{
+  margin-top:30px;
+  line-height:30px;
+  font-size: 1.1em;
+}
+.locUl li{
+  margin-bottom: 20px
+}
+.container h2{
+  margin-left:-40px;
+}
+.container h2,
+strong{
+  color: #7a4834;
+  font-family: "'Josefin Slab', serif";
+}
+.container p{
+  font-family: 'Montserrat', sans-serif;
+  color: #696469;
+}
+.tel{
+  color: black;
+}
+@media (max-width:950px){
+  .container{
+    display: flex;
+    flex-flow: column;
+    padding:20px;
+    justify-content: space-evenly;
+  }
+  .container h2{
+    margin-left:0;
+  }
+}
+@media (max-width:400px){
+  /* .locImg {
+    padding-top: 55px;
+  } */
+  .locContainer h2 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width:250px){
+  .container{
+    padding:0;
+  }
+  .locContainer h2 {
+    font-size: 1.5em;
+  }
+}

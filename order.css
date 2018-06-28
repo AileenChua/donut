@@ -1,0 +1,340 @@
+html{
+    background:url("../donuts-img/dex.bkd.jpg")no-repeat ;
+    background-size: 100% 100%;
+}
+
+.form-wrapper{
+  margin-top: 72px;
+  text-align: center;
+  margin-bottom:80px;
+}
+h2,h5{
+color: #7a4834;
+}
+h5{
+  display: inline;
+}
+h5,.orderspan{
+  font-family: 'Montserrat', sans-serif;
+}
+.contactinput{
+  font-size: 1.2em;
+  margin-left: 20px;
+  margin-bottom: 19px;
+
+}
+h2{
+font-size: 2em;
+margin-bottom: 20px;
+text-align: center;
+margin-top: 20px;
+}
+.form-wrapper h5{
+text-align: left;
+font-size: 1.1em;
+margin-bottom: 25px;
+}
+}
+.form-wrapper-inner{
+  padding: 100px;
+  margin-bottom: 50px;
+}
+.headandinput{
+  display: inline-flex;
+
+}
+.form{
+  display: flex;
+  flex-flow: column;
+}
+.form-inputs{
+  display: flex;
+  flex-flow: column;
+}
+/* The Customize and Assortments Buttons  */
+#myBtn, #myBtn2{
+  background-color: #7a4834;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    position: fixed;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 50px;
+    width: 80%;
+    height: 62vh;
+    border-radius: 15px;
+}
+
+/* The Close Button */
+.closex {
+    color: #aaaaaa;
+    float: right;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.closex:hover,
+.closex:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content p{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 900;
+}
+
+ .sideorder,.ordertextarea{
+  text-align: center;
+}
+.textarea{
+  min-height: 100px;
+  min-width: 95%;
+  max-width: 95%;
+  max-height: 100px;
+  width: 95%;
+  border: 1px solid #7a4834;
+}
+/* (Single) Choose Container */
+.singlechoosecontainer{
+  display: none;
+}
+/* (Half Dozen) Choose Container */
+.singlechoosecontainer2{
+  display: none;
+}
+/* (Dozen) Choose Container */
+.singlechoosecontainer3{
+  display: none;
+}
+/* (18) Choose Container */
+.singlechoosecontainer4{
+   display: none;
+}
+.singlechoose li{
+  float: left;
+  border: none;
+  width: 26%;
+  padding: 10px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+.singlechoose h4{
+  margin: 40px 0 0 0;
+}
+.orderstrong{
+  font-size: 12px;
+}
+.orderform{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 32px;
+}
+.tabs li,.tabs2 li{
+  display: block;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #7a4834;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.tabs li:hover , .tabs2 li:hover{
+  background-color: #372114;
+  color:white;
+}
+.tabs2{
+  display: none; /*needs to display flex when shown */
+  justify-content: space-evenly;
+}
+.tabs span{
+  line-height: 2;
+  cursor: pointer;
+}
+.tabs2.show{
+  display: flex;
+}
+/* Assortments  Modal Content*/
+.ast ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ast li{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.ast-img{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin: 10px;
+}
+.ast button {
+  padding: 9px 44px;
+  border: 1px solid #7a4834;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 0px;
+}
+.ast button:hover{
+background:#7a4834;
+color:white;
+}
+/* Assortments Selections */
+.ast-sel-sig{
+  display: none;
+  max-height: 525px;
+}
+.ast-sel-img1div{
+  flex-basis: 800px;
+}
+#myModal2 figcaption{
+  margin-left: 10px;
+}
+.ast-sel-content1 p{
+  text-align: center;
+}
+
+.ast-sel-sea{
+    display:none;
+    max-height: 355px;
+}
+.ast-sel-clas{
+    display: none;
+    max-height: 319px;
+}
+
+.ast-sel-ran{
+  display: none;
+  max-height: 269px;
+}
+.ast-sel-content1{
+  flex-basis: 800px;
+}
+
+.canceladdbtns{
+  text-align: center;
+}
+.canceladdbtns a{
+  color: white;
+  padding: 5px;
+  background:#7a4834;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+@media(max-width:700px){
+.orderform{
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+.orderform div{
+  padding: 10px;
+  font-size: 0.75em;
+}
+.modal-content{
+  padding:20px;
+}
+.ast ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+.ast-sel-ran,
+.ast-sel-clas,
+.ast-sel-sig,
+.ast-sel-sea{
+display: none;
+max-height: unset;
+flex-flow: column;
+}
+.ast-sel-img1div {
+    margin: 0 auto;
+    flex-basis: auto;
+}
+.ast-sel-content1,.ast-sel-content2,.ast-sel-content3,.ast-sel-content4,.ast-sel-content5 {
+  flex-basis: auto;
+}
+.ast-img {
+    width: 100%;
+}
+.ast-sel-content {
+  flex-basis: auto;
+}
+.modal-content p {
+  text-align: center;
+  margin-top: 50px;
+}
+@media(max-width:350px){
+  .tabs {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  .tabs li{
+     margin-bottom: 10px;
+  }
+}
+
+@media(max-width:200px){
+.modal-content{
+  padding:10px;
+}
+.modal-content p {
+  font-size: 0.5em;
+}
+h2 {
+    font-size: 1em;
+}
+.ast-sel-img1div {
+    flex-basis: auto;
+}
+.ast button {
+    padding: 9px 20px;
+  }
+  .closex {
+    font-size: 3em;
+}
+  .singlechoose li {
+    font-size: 0.5em;
+    padding: 39px;
+}
+}
