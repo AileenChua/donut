@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link href="styles/index.css" rel="stylesheet"/>
+  <link href="styles/fonts.css" rel="stylesheet"/>
+  <link href="styles/order.css" rel="stylesheet"/>
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="js/index.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <title>The Little Donut Shop</title>
+</head>
+<body>
+  <!-- Main Navigation -->
+  <div class="mainnav">
+      <h1 id="maintitle"><a href="index.html">The Little Donut Shop</a></h1>
+      <span class="ham"><a href="javascript:void(0)" class = "close"></a>&#9776;</span>
+      <div class="nav">
+          <a href="menu.html" class="nava">Menu</a>
+          <a href="locations.html" class="nava">Locations & Contact</a>
+          <a href="ourstory.html" class="nava">Our Story</a>
+          <a href="https://yahoo.com" class="nava">Order</a>
+          <a href="index.html#faq" class="nava">FAQ</a>
+      </div>
+      <div class= "overlay">
+    </div>
+  </div>
+
+  <!--Contact Form -->
+  <div class="entireWrapper">
+   <div class="form-wrapper">
+    <div class="form-wrapper-inner">
+      <h2>Please enter your contact information:</h2>
+      <div class="headandinput">
+          <div class="form-headings">
+            <form action="/action_page.php" class="form">
+              <h5>First name:</h5>
+              <h5>Last name:</h5>
+              <h5>Email:</h5>
+              <h5>Confirm Email:</h5>
+              <h5>Phone:</h5>
+          </div>
+          <div class="form-inputs">
+            <input class="contactinput" type="text" name="firstname" value="">
+            <input class="contactinput" type="text" name="lastname" value="">
+            <input class="contactinput" type="text" name="email" value="">
+            <input class="contactinput" type="text" name="confirmemail" value="">
+            <input class="contactinput" type="text" name="phone" value="">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<!-- Body Text -->
+<div class="orderwrapper">
+  <h2>Order</h2>
+  <!-- Trigger The Modal -->
+  <div class="sideorder">
+    <button id="myBtn" class="orderbtn">Customize</button>
+    <button id="myBtn2" class="orderbtn">Assortments</button>
+  </div>
+</div>
+</div> <!--End of class Entire Wrapper -->
+
+</div>
+<!--Footer -->
+ <div class="footer">
+  <div class="mainfoot">
+    <p>2018 &copy <a href="index.html">The Little Donut Shop</a></p>
+  <div class="socialcontainer">
+    <ul class="socialholder">
+      <a href="https://www.facebook.com" target="_blank"><img src="donuts-img/facebook.svg" class="social facebook"/></a>
+      <a href="https://www.twitter.com"  target="_blank"><img src="donuts-img/twitter.svg" class="social twitter"/></a>
+      <a href="https://www.instagram.com" target="_blank"><img src="donuts-img/instagram.svg"class="social instagram"/></a>
+      <a href="https://www.pinterest.com" target="_blank"><img src="donuts-img/pinterest.svg"class="social pinterest"/></a>
+    </ul>
+  </div>
+    <p>Project By Aileen Chua</p>
+  </div>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content wrapper -->
+  <div class="modal-content">
+      <span class="closex">&times;</span>
+        <div class="choosesection">
+            <!--Pop Up Modal -->
+            <div class="ordercustom"> <!--The fixed div for custom orders -->
+               <div class="ordercustomheader"></div><!--Top header stylistic details-->
+               <h2>Custom Order</h2>
+              <p>Everything is freshly made the moment you order. The rest is up to you!</p>
+            </div>
+            <!-- Radio Buttons Inside -->
+          <div>
+              <form action="" class="orderform">
+                <div><input type="radio" name="order" value="male" onclick="myFunction0()">&nbsp Single<br></div>
+                <div><input type="radio" name="order" value="female" onclick="myFunction1()">&nbsp Half-Dozen<strong>(+$7.95)</strong><br></div>
+                <div><input type="radio" name="order" value="other" onclick="myFunction2()">&nbsp Dozen<strong>(+$14.95)</strong></div>
+                <div><input type="radio" name="order" value="other" onclick="myFunction3()">&nbsp 2 Dozen<strong>(+$27.95)</strong></div>
+              </form>
+              <!--Single Choose  -->
+              <!-- Choose Step 1 -->
+<form action="" class="orderflavor">
+                <div class="singlechoosecontainer">
+                  <div class="singlechoose">
+                    <h4>Choose Your Flavor:</h4><br>
+                      <ul>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single Bare<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single Glazed<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Cinnamon Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Powdered Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Maple Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Chocolate Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Vanilla Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Peanut Butter Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Strawberry Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Blueberry Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Lemon Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single Seasonal Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      </ul>
+                  </div>
+              </form>
+              <!-- Choose Step 2 -->
+              <form action="" class="orderflavor">
+                <div class="singlechoose">
+                  <h4>Choose Your Toppings:</h4><br>
+                    <ul>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Bacon<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Oreos<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Rainbow Sprinkles<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Cinnamon Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Peanuts<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Chocolate Sprinkles<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Graham Cracker<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Coconut<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Powedered Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>None<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                    </ul>
+                </div>
+            </form>
+            <!-- Choose Step 3 -->
+            <form action="" class="orderflavor">
+              <div class="singlechoose">
+                <h4>Choose Your Drizzle (up to two options):</h4><br>
+                  <ul>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>None<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Salted Caramel<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Peanut Butter<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Glaze<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Hot Fudge<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Chocolate<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Maple<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Blueberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Rasberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Marshmallow<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Lemon<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Blackberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Vanilla<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Strawberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+</form>
+<form action="" class="orderflavor">
+                <div class="singlechoosecontainer">
+                  <ul class="tabs">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                  </ul>
+                  <div class="singlechoose">
+                    <h4>Choose Your Flavor:</h4><br>
+                      <ul>
+                        <li>
+                        <input type="radio" id="match"name="" value=""></input>
+                        <label for="match">Single Bare<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single Glazed<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Cinnamon Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Powdered Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Maple Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Chocolate Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Vanilla Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Peanut Butter Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Strawberry Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Blueberry Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Lemon Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single Seasonal Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      </ul>
+                  </div>
+              </form>
+              <!-- Choose Step 2 -->
+              <form action="" class="orderflavor">
+                <div class="singlechoose">
+                  <h4>Choose Your Toppings:</h4><br>
+                    <ul>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Bacon<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Oreos<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Rainbow Sprinkles<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Cinnamon Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Peanuts<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Chocolate Sprinkles<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Graham Cracker<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Coconut<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Powedered Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>None<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                    </ul>
+                </div>
+            </form>
+            <!-- Choose Step 3 -->
+            <form action="" class="orderflavor">
+              <div class="singlechoose">
+                <h4>Choose Your Drizzle (up to two options):</h4><br>
+                  <ul>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>None<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Salted Caramel<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Peanut Butter<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Glaze<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Hot Fudge<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Chocolate<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Maple<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Blueberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Rasberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Marshmallow<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Lemon<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Blackberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Vanilla<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Strawberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+</form>
+<form action="" class="orderflavor">
+        <div class="singlechoosecontainer">
+              <ul class="tabs">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+              </ul>
+            <div class="singlechoose">
+              <h4>Choose Your Flavor:</h4><br>
+                <ul>
+                  <li>
+                  <input type="radio" name="" value=""></input>
+                  <label>Single Bare<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                  </li>
+                  <li>
+                  <input type="radio" name="" value=""></input>
+                  <label>Single Glazed<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                  </li>
+                  <li>
+                  <input type="radio" name="" value=""></input>
+                  <label>Single with Cinnamon Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                  </li>
+                  <li>
+                  <input type="radio" name="" value=""></input>
+                  <label>Single with Powdered Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                  </li>
+                  <li>
+                  <input type="radio" name="" value=""></input>
+                  <label>Single with Maple Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                  </li>
+                  <li>
+                  <input type="radio" name="" value=""></input>
+                  <label>Single with Chocolate Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                  </li>
+                  <li>
+                  <input type="radio" name="" value=""></input>
+                  <label>Single with Vanilla Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                  </li>
+                  <li>
+                  <input type="radio" name="" value=""></input>
+                  <label>Single with Peanut Butter Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                  </li>
+                  <li>
+                  <input type="radio" name="" value=""></input>
+                  <label>Single with Strawberry Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                  </li>
+                  <li>
+                  <input type="radio" name="" value=""></input>
+                  <label>Single with Blueberry Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                  </li>
+                  <li>
+                  <input type="radio" name="" value=""></input>
+                  <label>Single with Lemon Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                  </li>
+                  <li>
+                  <input type="radio" name="" value=""></input>
+                  <label>Single Seasonal Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                </li>
+                </ul>
+            </div>
+          </form>
+              <!-- Choose Step 2 -->
+              <form action="" class="orderflavor">
+                <div class="singlechoose">
+                  <h4>Choose Your Toppings:</h4><br>
+                    <ul>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Bacon<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Oreos<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Rainbow Sprinkles<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Cinnamon Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Peanuts<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Chocolate Sprinkles<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Graham Cracker<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Coconut<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Powedered Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>None<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                    </ul>
+                </div>
+            </form>
+            <!-- Choose Step 3 -->
+            <form action="" class="orderflavor">
+              <div class="singlechoose">
+                <h4>Choose Your Drizzle (up to two options):</h4><br>
+                  <ul>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>None<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Salted Caramel<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Peanut Butter<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Glaze<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Hot Fudge<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Chocolate<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Maple<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Blueberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Rasberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Marshmallow<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Lemon<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Blackberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Vanilla<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Strawberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+</form>
+<form action="" class="orderflavor">
+                <div class="singlechoosecontainer">
+                <ul class="tabs">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <span onclick="revealtabs()">&nbsp></span>
+                  </ul>
+                  <ul class="tabs2">
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                  </ul>
+
+                  <div class="singlechoose">
+                    <h4>Choose Your Flavor:</h4><br>
+                      <ul>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single Bare<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single Glazed<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Cinnamon Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Powdered Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Maple Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Chocolate Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Vanilla Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Peanut Butter Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Strawberry Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Blueberry Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single with Lemon Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                        </li>
+                        <li>
+                        <input type="radio" name="" value=""></input>
+                        <label>Single Seasonal Icing<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      </ul>
+                  </div>
+              </form>
+              <!-- Choose Step 2 -->
+              <form action="" class="orderflavor">
+                <div class="singlechoose">
+                  <h4>Choose Your Toppings:</h4><br>
+                    <ul>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Bacon<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Oreos<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Rainbow Sprinkles<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Cinnamon Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Peanuts<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Chocolate Sprinkles<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Graham Cracker<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Coconut<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>Powedered Sugar<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                      <li>
+                      <input type="checkbox" name="" value=""></input>
+                      <label>None<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                      </li>
+                    </ul>
+                </div>
+            </form>
+            <!-- Choose Step 3 -->
+            <form action="" class="orderflavor">
+              <div class="singlechoose">
+                <h4>Choose Your Drizzle (up to two options):</h4><br>
+                  <ul>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>None<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Salted Caramel<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Peanut Butter<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Glaze<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Hot Fudge<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Chocolate<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Maple<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Blueberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Rasberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Marshmallow<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Lemon<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Blackberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Vanilla<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                    <li>
+                    <input type="checkbox" name="" value=""></input>
+                    <label>Strawberry<strong class="orderstrong"><br>(+ $1.50)</strong></label>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+</form>
+
+              <!-- Text Area -->
+              <p class="textareaspecial">Enter any special instructions here: (No price altering substitutions/additions)</p>
+              <form action="" class="ordertextarea">
+                <textarea class="textarea"></textarea>
+              </form>
+              <!--  Cancel and Cart Buttons -->
+              <div class="canceladdbtns">
+                <a class="orderCancel">Cancel</a>
+                <a class="orderAddTo">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<!-- The Modal (Assortments)  -->
+<div id="myModal2" class="modal">
+  <!-- Modal content wrapper -->
+  <div class="modal-content">
+      <span class="closex">&times;</span>
+        <div class="choosesection">
+            <!--Pop Up Modal Inner -->
+            <div class="ordercustom"> <!--The fixed div for custom orders -->
+               <div class="ordercustomheader"></div><!--Top header stylistic details-->
+               <h2>Assortments</h2>
+              <p>Everything is freshly made the moment you order. The rest is up to you!</p>
+               <!--Assortments Images and Buttons  -->
+              <div class="ast">
+                    <ul>
+                      <li><img src="donuts-img/order-ast-1.png" class="ast-img"></img><br><button class="sig">Signature</button></li>
+                      <li><img src="donuts-img/order-ast-2.png" class="ast-img"></img><br><button class="sea">Seasonal</button></li>
+                      <li><img src="donuts-img/order-ast-3.png" class="ast-img"></img><br><button class="ran">Random</button></li>
+                      <li><img src="donuts-img/order-ast-4.png" class="ast-img"></img><br><button class="clas">Classic</button></li>
+                    </ul>
+                  </div>
+        <div>
+        <!--Selections Sliders -->
+        <!-- Signature -->
+        <div class="ast-sel-sig">
+                      <div class="ast-sel-img1div">
+                        <img src="donuts-img/order-ast-1.png" class="ast-img"></img>
+                        <figcaption>$14.99</figcaption>
+                      </div>
+                        <div class="ast-sel-content1">
+                          <h2>Signature</h2>
+                          <p>Enjoy some of our fan favorites! Our signature assortment includes a dozen warm, delicious and made to order donuts. Includes:<br>
+                            • Maple Icing with Chopped Bacon and Caramel Drizzle<br>
+                            • Vanilla Icing with Chocolate Drizzle and Rainbow Sprinkles<br>
+                            • Peanut Butter Icing with Chocolate Drizzle<br>
+                            • Blueberry Icing with Maple Drizzle and Powdered Sugar<br>
+                            • Glazed with Oreo crumbles, Powdered Sugar, and Vanilla Drizzle<br>
+                            • Lemon Icing with Raspberry Drizzle<br>
+                            • Maple Icing with Cinnamon Sugar and Powdered Sugar<br>
+                            • Chocolate Icing with Marshmallow Drizzle and Graham Cracker Crumbs<br>
+                            • Vanilla Icing with Shredded Coconut and Powdered Sugar<br>
+                            • Vanilla Icing and Cinnamon Sugar<br>
+                            • Chocolate Icing and Vanilla Drizzle<br>
+                            • Chocolate Icing with Peanuts and Shredded Coconut</p>
+                        </div>
+                      </div>
+                    </div>
+        <!-- Seasonal -->
+        <div class="ast-sel-sea">
+          <div class="ast-sel-img1div">
+            <img src="donuts-img/order-ast-2.png" class="ast-img"></img>
+            <figcaption>$14.99</figcaption>
+          </div>
+            <div class="ast-sel-content1">
+              <h2>Seasonal</h2>
+              <p>Step into Spring! Our limited time Seasonal Assortment includes our spring flavor, Key lime icing. Also includes:<br>
+                • Vanilla Icing with Hot Fudge Drizzle and Spring Sprinkles<br>
+                • Key Lime Icing with Graham Cracker Crumbs<br>
+                • Maple Icing with Chopped Bacon<br>
+                • Lemon Icing with Shredded Coconut<br>
+                • Cinnamon Sugar with Vanilla Drizzle<br>
+                • Chocolate Icing with Spring Sprinkles<br>
+                • Cinnamon Sugar with Key Lime Drizzle<br>
+                • Powdered Sugar<br>
+                • Key Lime Icing with Shredded Coconut<br>
+                • Strawberry Icing with Spring Sprinkles<br>
+                • Chocolate Icing with Oreo Crumbles<br>
+                • Glazed with Spring Sprinkles</p>
+            </div>
+          </div>
+        <!-- Random -->
+        <div class="ast-sel-ran">
+          <div class="ast-sel-img1div">
+            <img src="donuts-img/order-ast-3.png" class="ast-img"></img>
+            <figcaption>$14.99</figcaption>
+          </div>
+            <div class="ast-sel-content1">
+              <h2>Random</h2>
+              <p>Topper's choice! Choose the Random Assortment for a box customized exclusively by our donut toppers.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Classic -->
+        <div class="ast-sel-clas">
+            <div class="ast-sel-img1div">
+              <img src="donuts-img/order-ast-4.png" class="ast-img"></img>
+              <figcaption>$14.99</figcaption>
+            </div>
+              <div class="ast-sel-content1">
+                <h2>Classic</h2>
+                <p>Keep it simple with our Classic Assortment! Includes:<br>
+                  • Maple Icing with Chopped Bacon<br>
+                  • Vanilla Icing with Rainbow Sprinkles<br>
+                  • Chocolate Icing with Vanilla Drizzle<br>
+                  • Blueberry Icing with Powdered Sugar<br>
+                  • Peanut Butter Icing with Raspberry Drizzle<br>
+                  • Glazed with Peanuts<br>
+                  • Cinnamon Sugar<br>
+                  • Vanilla Icing with Oreo crumbles<br>
+                  • Powdered Sugar<br>
+                  • Chocolate Icing with Rainbow Sprinkles<br>
+                  • Chocolate Icing with Peanuts<br>
+                  • Strawberry Icing with Blackberry Drizzle</p>
+              </div>
+            </div>
+            <!--The Bottom Content of Modal  -->
+                  <p class="textareaspecial">Enter any special instructions here: (No price altering substitutions/additions)</p>
+                    <form action="" class="ordertextarea">
+                      <textarea class="textarea"></textarea>
+                        <div class="canceladdbtns">
+                          <a class="orderCancel">Cancel</a>
+                          <a class="orderAddTo">Add to Cart</a>
+                        </div>
+                    </form>
+        </div>
+      </div>
+       <!--End of Assortments Modal Content  -->
+</body>
+</html>
