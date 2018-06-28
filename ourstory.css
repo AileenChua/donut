@@ -1,5 +1,5 @@
 html{
-    background: url("../donuts-img/dex.bkd.jpg");
+    background: url("dex.bkd.jpg");
 }
 .ourImg{
   display: block;
@@ -11,7 +11,6 @@ html{
   margin: 0 100px;
   font-family:  'Josefin Slab', serif;
 }
-
 .content a{
   display: block;
   text-align: center;
