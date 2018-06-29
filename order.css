@@ -43,6 +43,10 @@ margin-bottom: 25px;
   display: inline-flex;
 
 }
+/* Input Buttons Padding */
+form.orderform div{
+    padding-left:3px;
+}
 .form{
   display: flex;
   flex-flow: column;
