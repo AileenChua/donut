@@ -1,5 +1,5 @@
 html{
-    background:url("../donuts-img/dex.bkd.jpg")no-repeat ;
+    background:url("dex.bkd.jpg")no-repeat ;
     background-size: 100% 100%;
 }
 
@@ -52,7 +52,7 @@ margin-bottom: 25px;
   flex-flow: column;
 }
 /* The Customize and Assortments Buttons  */
-#myBtn, #myBtn2{
+#myBtn0,#myBtn, #myBtn2{
   background-color: #7a4834;
   border: none;
   color: white;
