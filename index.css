@@ -421,6 +421,13 @@ overflow-y: hidden;
       flex-flow: column;
       align-items: center;
     }
+.entireWrapper{
+display: flex;
+flex-flow: column;
+}
+.orderwrapper {
+transform:translateY(0px);
+}
 }
   @media (max-width:400px) {
       .ham{
