@@ -259,12 +259,10 @@ font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
 }
-.form-wrapper-inner{
-  transform: translateY(26px);
+.form-wrapper-inner, .orderwrapper{
+  margin-top:50px;
 }
-.orderwrapper{
-  transform: translateY(100px)
-}
+
 /******************************************************************
                             Media Query
 *******************************************************************/
