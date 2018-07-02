@@ -100,7 +100,7 @@ form.orderform div{
 
 /* The Close Button */
 .closex {
-    color: #aaaaaa;
+    color:#372214;
     float: right;
     font-size: 3em;
     font-weight: bold;
@@ -266,6 +266,12 @@ color:white;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
+}
+
+.canceladdbtns a:hover{
+    transition: 0.5s;
+    background-color: #372214;
+    color: white;
 }
 @media(max-width:700px){
 .orderform{
