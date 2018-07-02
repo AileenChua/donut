@@ -249,10 +249,11 @@ font-weight: 900;
 }
 /* Order Page */
 .entireWrapper{
-display: grid;
-grid-template-columns: 50% 50%;
-min-height: calc(100vh - 104px);
-overflow-y: hidden;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: calc(100vh - 104px);
+  overflow-y: hidden;
+  font-weight:500;
 }
 .entireWrapper h2{
   font-family: 'Montserrat', sans-serif;
