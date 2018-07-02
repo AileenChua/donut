@@ -206,6 +206,7 @@ font-weight: 900;
 .fcont p{
   font-size: 0.75em;
   color: #8c644a;
+  font-family: 'Montserrat', sans-serif;
 }
 .faq{
   font-family:work sans;
@@ -215,7 +216,9 @@ font-weight: 900;
 }
 .faq h2,
 .fpq{
-color:#372214;
+  color:#372214;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 .footer{
   display: block;
