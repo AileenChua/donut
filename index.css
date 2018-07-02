@@ -259,10 +259,8 @@ font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
 }
-.form-wrapper-inner, .orderwrapper{
-  margin-top:50px;
-}
-
+.ordermain{
+  padding-top: 79px;
 /******************************************************************
                             Media Query
 *******************************************************************/
@@ -459,7 +457,9 @@ transform:translateY(0px);
       }
         .socialcontainer {
           width: auto;
-}
+      }
+      .ordermain{
+      padding-top: 59px;
       }
   }
   @media (max-width:280px) {
@@ -472,4 +472,9 @@ transform:translateY(0px);
       .img-class{
         padding-top: 72px;
       }
+  }
+  @media (max-width:218px) {
+    .ordermain{
+     padding-top: 78px; 
+    }
   }
