@@ -4,9 +4,7 @@ html{
 }
 
 .form-wrapper{
-  margin-top: 72px;
   text-align: center;
-  margin-bottom:80px;
 }
 h2,h5{
 color: #7a4834;
@@ -219,7 +217,7 @@ font-family: 'Montserrat', sans-serif
   margin: 10px;
 }
 .ast button,.canceladdbtns a {
-  padding: 9px 44px;
+  padding: 9px 30px;
   border: 1px solid #7a4834;
   margin-bottom: 5px;
   cursor: pointer;
