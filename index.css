@@ -168,6 +168,7 @@ margin-bottom:50px;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
 }
 a.offering, a.visit {
     font-size: 1.2em;
@@ -237,6 +238,7 @@ font-weight: 900;
 }
 .mainfoot p{
   line-height: 55px;
+  font-weight: 100;
 }
 .mainfoot p a{
   color: #f7f6d4;
