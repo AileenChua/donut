@@ -71,7 +71,7 @@ form.orderform div{
   margin: 4px 2px;
   cursor: pointer;
 }
-#myBtn0,#myBtn, #myBtn2{
+#myBtn0:hover,#myBtn:hover, #myBtn2:hover{
     background: #543023;
     transition: 0.5s;
     color: white;   
