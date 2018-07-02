@@ -24,6 +24,9 @@ body{
 .mainnav a{
   color: #f7f5d3;
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+
 }
 h2{
 font-family:'Josefin Slab', serif;
@@ -58,7 +61,7 @@ line-height: 12px;
 .first{
 	display:flex;
 	justify-content: center;
-	background:url("../donuts-img/menuwall.jpg");
+	background:url("menuwall.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -130,11 +133,14 @@ a.lightbox{
 	text-align: center;
 }
 .footer{
-	  background:#372114;
-	  padding: 20px;
-	  color: #f7f6d4;
-	  font-family: work sans;
-	  text-align: center;
+background:#372114;
+padding: 20px;
+color: #f7f6d4;
+font-family: work sans;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-weight: 100;
+
 	}
 .mainfoot{
   display: flex;
