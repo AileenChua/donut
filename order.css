@@ -219,10 +219,12 @@ font-family: 'Montserrat', sans-serif
   margin-bottom: 5px;
   cursor: pointer;
   border-radius: 0px;
+  background: #7a4734;
+  color: white;
 }
 .ast button:hover, canceladdbtns a:hover{
-background:#7a4834;
-color:white;
+    background: #543023;
+    transition: 0.5s;
 }
 /* Assortments Selections */
 .ast-sel-sig{
