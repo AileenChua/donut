@@ -71,6 +71,11 @@ form.orderform div{
   margin: 4px 2px;
   cursor: pointer;
 }
+#myBtn0,#myBtn, #myBtn2{
+    background: #543023;
+    transition: 0.5s;
+    color: white;   
+}
 
 /* The Modal (background) */
 .modal {
