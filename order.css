@@ -21,6 +21,8 @@ h5,.orderspan{
   font-size: 1.2em;
   margin-left: 20px;
   margin-bottom: 19px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
 
 }
 h2{
@@ -110,7 +112,6 @@ form.orderform div{
     cursor: pointer;
 }
 .modal-content p{
-  font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin-top: 20px;
   font-weight: 900;
