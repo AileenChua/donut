@@ -28,6 +28,7 @@ html{
   margin-bottom: 10px;
   line-height: 32px;
   color: #696469;
+  font-family: 'Montserrat', sans-serif;
 }
 .contain{
   display: flex;
