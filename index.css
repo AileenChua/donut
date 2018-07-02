@@ -97,7 +97,7 @@ img.menuimg{
   }
 .ourmenu,
 .ourloc {
-background: url("file:///Users/Marisol/Documents/donuts-site/donuts-img/dex.bkd.jpg");
+background: url("dex.bkd.jpg");
 padding: 100px 200px;
 }
 .ourmenu h2, .ourmenu a,
@@ -261,6 +261,7 @@ font-weight: 900;
 }
 .ordermain{
   padding-top: 79px;
+}
 /******************************************************************
                             Media Query
 *******************************************************************/
@@ -416,22 +417,19 @@ font-weight: 900;
   }
 }
 
-  @media (max-width:750px) {
-    .fcont{
-      grid-template-columns: auto;
-    }
-    .mainfoot{
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-    }
-.entireWrapper{
-display: flex;
-flex-flow: column;
-}
-.orderwrapper {
-transform:translateY(0px);
-}
+@media (max-width:750px) {
+  .fcont{
+  grid-template-columns: auto;
+  }
+  .mainfoot{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  }
+  .entireWrapper{
+  display: flex;
+  flex-flow: column;
+  }
 }
   @media (max-width:400px) {
       .ham{
