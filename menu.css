@@ -256,24 +256,21 @@ img.social{
 /*======================================HAM NAVIGATION================*/
 @media (max-width:575px) {
 	.ham{
-			width: 10%;
-	    text-align: right;
+	width: 10%;
+	text-align: right;
 	}
 	.container2 ul li{
-		width:100%;
-	}
-	.ham{
-			width: 50%;
+	width:100%;
 	}
 }
 @media (max-width:400px) {
 	.ham{
-		line-height: 16px;
-		font-size: 1.5em;
-		overflow: hidden;/*redundant?*^^^^*/
+	line-height: 16px;
+	font-size: 1.5em;
+	overflow: hidden;/*redundant?*^^^^*/
 	}
 	.ham a.close{
-		margin-left: 0;
+	margin-left: 0;
 	}
 	.nav.open {
 	transform: translateY(54px);
