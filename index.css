@@ -476,3 +476,12 @@ font-weight: 900;
      padding-top: 78px; 
     }
   }
+  @media (max-width:155px) {
+    .ordermain{
+     padding-top: 97px; 
+    }
+  }
+@media (max-width: 116px)
+.ordermain {
+    padding-top: 116px;
+}
