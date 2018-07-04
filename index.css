@@ -485,3 +485,11 @@ font-weight: 900;
 .ordermain {
     padding-top: 116px;
 }
+@media (max-width: 116px)
+.mainnav {
+  font-size:0.5em;
+}
+.ordermain {
+    padding-top: 88px;
+}
+}
