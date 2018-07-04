@@ -475,3 +475,9 @@ font-weight: 900;
 .ordermain {
     padding-top: 97px;
 }
+}
+@media (max-width: 116px)
+.ordermain {
+    padding-top: 116px;
+}
+}
