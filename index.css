@@ -471,25 +471,3 @@ font-weight: 900;
         padding-top: 72px;
       }
   }
-  @media (max-width:218px) {
-    .ordermain{
-     padding-top: 78px; 
-    }
-  }
-  @media (max-width:155px) {
-    .ordermain{
-     padding-top: 97px; 
-    }
-  }
-@media (max-width: 116px)
-.ordermain {
-    padding-top: 116px;
-}
-@media (max-width: 116px)
-.mainnav {
-  font-size:0.5em;
-}
-.ordermain {
-    padding-top: 88px;
-}
-}
