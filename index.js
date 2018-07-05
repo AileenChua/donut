@@ -15,12 +15,12 @@ hamBtn.addEventListener('click', function () {
   nav.className += " open";
   overlay.className += " open";
   overlay.style.pointerEvents = "auto";
-  hamBtn.className += " close";
+ 
 })
 closeBtn.addEventListener('click', function (){
   nav.className = " nav";
   overlay.className = "overlay";
-  hamBtn.className = "ham";
+  
 })
 
 //When you press outside the ham
