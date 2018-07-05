@@ -339,6 +339,7 @@ font-weight: 900;
     flex-flow: column;
     text-align: center;
     align-items: center;
+    overflow-y:hidden;
   }
   .mcont{
     align-items: center;
