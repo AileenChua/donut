@@ -41,6 +41,7 @@ img.menuimg{
   padding:20px;
   justify-content: center;
   font-weight: 200;
+  z-index:5;
 
 }
 .mainnav a{
