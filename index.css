@@ -9,18 +9,6 @@ html{
 body{
   font-family: 'Josefin Slab', serif;
 }
-.curly::after{
- display: block;
- content: url("https://theme-assets.getbento.com/doughdoughnuts/c22da6a.doughdoughnuts/assets/images/bg-bar.png");
- position: absolute;
-}
-.curly::before{
- display: block;
- content: url("https://theme-assets.getbento.com/doughdoughnuts/c22da6a.doughdoughnuts/assets/images/bg-bar.png");
- position: absolute;
- left: 62px;
- font-weight: 200;
-}
 .socialholder{
   margin-left:-60px;
   overflow-y: hidden;
