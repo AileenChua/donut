@@ -326,9 +326,11 @@ font-weight: 900;
      width: 100%;
      opacity:0;
      z-index: -1;
+     top: 0;
+     left: 0;
    }
    .overlay.open{
-     z-index: 1000;
+     z-index: 1;
    }
    /*END OF NAVIGATION HAM//////////////////////////////////////////////*/
   .ourmenu,
