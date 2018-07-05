@@ -54,7 +54,7 @@ strong{
   .container{
     display: flex;
     flex-flow: column;
-    padding:20px;
+    padding:50px;
     justify-content: space-evenly;
   }
   .container h2{
