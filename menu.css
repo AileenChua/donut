@@ -192,7 +192,7 @@ img.social{
 			width: 300px;
 	  }
 	  .nav.open{
-	    transform: translateY(70px);
+	    transform: translateY(79px);
 	  }
 	  .nav.open.ham{
 	    cursor: pointer;
