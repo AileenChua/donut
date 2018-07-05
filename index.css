@@ -45,7 +45,6 @@ img.menuimg{
   overflow: visible;
 }
 .mainnav{
-  z-index: 100;
   position: fixed;
   width: 100%;
   display: flex;
@@ -280,7 +279,6 @@ font-weight: 900;
     flex-flow:row;
     text-align: center;
     padding: 20px;
-    z-index: 100;
     position: fixed;
     justify-content: space-between;
   }
