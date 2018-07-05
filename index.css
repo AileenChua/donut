@@ -296,7 +296,7 @@ font-weight: 900;
     margin-top:0;
   }
   .nav.open{
-    transform: translateY(70px);
+    transform: translateY(79px);
   }
   .nav.open.ham{
     cursor: pointer;
