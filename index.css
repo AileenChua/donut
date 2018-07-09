@@ -254,9 +254,9 @@ font-weight: 900;
 @media (max-width:950px) {
   .ham {
     display: block;
-    margin-right: 25px;
+    margin-right: 52px;
     cursor:pointer;
-    width: 10%;
+    width: 4%;
     font-size: 2em;
     color: #f7f5d3;
   }
