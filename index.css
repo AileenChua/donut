@@ -424,6 +424,7 @@ font-weight: 900;
         line-height: 7px;
         font-size: 1.5em;
         overflow: hidden;/*redundant?*^^^^*/
+        height: 22px;
       }
       .nav.open {
       transform: translateY(70px);
