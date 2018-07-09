@@ -6,20 +6,25 @@ var closeBtn = document.querySelector(".close");
 var overlay = document.querySelector(".overlay");
 var nava = document.querySelector(".nava");
 var footer = document.querySelector(".footer");
+var mainNav = document.querySelector(".mainNav");
+
 
 window.addEventListener("load", function() {
-      overlay.style.pointerEvents = "none";
-      })
+ overlay.style.pointerEvents = "none";
+ mainNav.style.height = "auto"
+})
 
 hamBtn.addEventListener('click', function () {
   nav.className += " open";
   overlay.className += " open";
   overlay.style.pointerEvents = "auto";
+  mainNav.style.height = "57px"
  
 })
 closeBtn.addEventListener('click', function (){
   nav.className = " nav";
   overlay.className = "overlay";
+  mainNav.style.height = "auto"
   
 })
 
@@ -28,6 +33,7 @@ window.addEventListener('click', function(event){
   if(event.target === overlay) {
     nav.className = " nav";
     overlay.className = "overlay";
+    mainNav.style.height = "auto"
   }
 })
 
