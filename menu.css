@@ -10,7 +10,7 @@ body{
     
 }
 /*======================================HAM NAVIGATION================*/
-.mainnav{
+/* .mainnav{
 	z-index:100;
 	position: fixed;
   width: 100%;
@@ -27,7 +27,7 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
 
-}
+} */
 h2{
 font-family:'Josefin Slab', serif;
 font-weight:bold;
@@ -37,7 +37,7 @@ a.seeAll{
 	color: #372114;
 	text-decoration: none;
 }
-.nav{
+/* .nav{
 	margin-left: 150px;
 line-height: 32px;
 }
@@ -56,7 +56,7 @@ line-height: 12px;
 
 .nav.close{
   display: none;
-}
+} */
 /*======================================HAM NAVIGATION================*/
 .first{
 	display:flex;
@@ -132,7 +132,7 @@ a.lightbox{
 .see{
 	text-align: center;
 }
-.footer{
+/* .footer{
 background:#372114;
 padding: 20px;
 color: #f7f6d4;
@@ -141,7 +141,7 @@ text-align: center;
 font-family: 'Montserrat', sans-serif;
 font-weight: 100;
 
-	}
+}
 .mainfoot{
   display: flex;
   flex-flow: row;
@@ -159,19 +159,19 @@ img.social{
 }
 .socialholder{
 	margin-left: -60px;
-}
+} */
  /* MEDIA QUERIES 950PX *****************************************/
 @media (max-width:950px){
 /*===HAM===*/
-	  .ham {
+/* 	  .ham {
 	    display: block;
 	    margin-right: 25px;
 	    cursor:pointer;
 	    width: 10%;
 	    font-size: 2em;
 	    color: #f7f5d3;
-	  }
-	  .mainnav{
+	  } */
+/* 	  .mainnav{
 	    display:flex;
 	    flex-flow:row;
 	    text-align: center;
@@ -230,7 +230,7 @@ img.social{
 	   .overlay.open{
 	     z-index: 1;
 	   }
-	}
+	} */
 	@media (max-width:700px) {
 	.container2 ul li {
     width: 25%;
