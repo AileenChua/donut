@@ -121,9 +121,6 @@ padding: 100px 200px;
 display: flex;
 flex-flow: row;
 }
-.p{
-    padding-right: 30px;
-}
 .mwrap{
   display: flex;
     flex-flow: column;
