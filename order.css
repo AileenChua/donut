@@ -116,8 +116,8 @@ form.orderform div{
     cursor: pointer;
 }
 .modal-content p{
-font-family: 'Montserrat', sans-serif
-  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
   text-align: center;
   margin-top: 20px;
 }
