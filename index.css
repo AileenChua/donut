@@ -267,6 +267,7 @@ font-weight: 900;
     padding: 20px;
     position: fixed;
     justify-content: space-between;
+    height: 57px;
   }
   .nav{
     display: block;
@@ -280,7 +281,7 @@ font-weight: 900;
     margin-top:0;
   }
   .nav.open{
-    transform: translateY(79px);
+    transform: translateY(97px);
   }
   .nav.open.ham{
     cursor: pointer;
@@ -425,11 +426,11 @@ font-weight: 900;
         overflow: hidden;/*redundant?*^^^^*/
       }
       .nav.open {
-      transform: translateY(54px);
+      transform: translateY(70px);
       width: 100%;
       }
       #maintitle{
-      font-size: 1em;
+      font-size: 0.75em;
       }
       .img-class{
         padding-top: 56px;
