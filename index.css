@@ -23,7 +23,6 @@ body{
 .nava{
  margin: 10px;
 }
-
 .img,
 .img-one{
   width:100%;
@@ -88,6 +87,10 @@ img.menuimg{
 background: url("dex.bkd.jpg");
 padding: 100px 200px;
 }
+.ourwrap{
+  margin:0 auto;
+  max-width:50%;
+}
 .ourmenu h2, .ourmenu a,
 .ourloc h2, .ourloc a,
 .pla,
@@ -142,7 +145,8 @@ display: grid;
 grid-template-columns: 50% 50%;
 grid-gap:30px;
 text-align:center;
-margin-bottom:50px;
+max-width: 40%;
+margin: 0 auto 100px auto;
 }
 .fcont{
   display: grid;
@@ -187,7 +191,9 @@ margin-bottom: 10px;
 font-weight: 900;
 }
 .fcont{
-  color: #49494a;
+color: #49494a;
+max-width: 50%;
+margin: 0 auto;
 }
 .fcont p{
   font-size: 0.75em;
