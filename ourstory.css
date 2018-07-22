@@ -44,8 +44,13 @@ html{
 .img-child{
     float: left;
 }
-.kid{
-  display: block;
+.kid,
+.zero,
+.two,
+.three{
+display: block;
+margin:0 auto;
+max-width:50%;
 }
 @media (min-width:1050px){
   .img-little{
