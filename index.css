@@ -245,6 +245,8 @@ margin: 0 auto;
   min-height: calc(100vh - 104px);
   overflow-y: hidden;
   font-weight:500;
+  max-width: 50%;
+  margin: 0 auto;
 }
 .entireWrapper h2{
   font-family: 'Montserrat', sans-serif;
