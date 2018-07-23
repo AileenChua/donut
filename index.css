@@ -87,10 +87,6 @@ img.menuimg{
 background: url("dex.bkd.jpg");
 padding: 100px 200px;
 }
-.ourwrap{
-  margin:0 auto;
-  max-width:50%;
-}
 .ourmenu h2, .ourmenu a,
 .ourloc h2, .ourloc a,
 .pla,
@@ -141,11 +137,9 @@ flex-flow: row;
   margin:auto;
 }
 .locwrap{
-display: grid;
-grid-template-columns: 50% 50%;
-grid-gap:30px;
+display:block;
 text-align:center;
-max-width: 40%;
+max-width: 50%;
 margin: 0 auto 100px auto;
 }
 .fcont{
@@ -156,7 +150,7 @@ margin: 0 auto 100px auto;
 .mainfoot{
   display: flex;
   flex-flow: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-family: 'Montserrat', sans-serif;
 }
 a.offering, a.visit {
@@ -475,5 +469,14 @@ margin: 0 auto;
 @media (max-width: 116px){
 .ordermain {
     padding-top: 90px;
+}
+}
+
+@media (min-width: 1500px){
+.ourwrap{
+max-width:50%;
+}
+  .fcont {
+max-width: 50%;
 }
 }
