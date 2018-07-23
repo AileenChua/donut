@@ -186,7 +186,6 @@ font-weight: 900;
 }
 .fcont{
 color: #49494a;
-max-width: 50%;
 margin: 0 auto;
 }
 .fcont p{
@@ -475,8 +474,10 @@ margin: 0 auto;
 @media (min-width: 1500px){
 .ourwrap{
 max-width:50%;
+margin: 0 auto;
 }
   .fcont {
 max-width: 50%;
+margin: 0 auto;
 }
 }
