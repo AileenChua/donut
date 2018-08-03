@@ -50,7 +50,7 @@ html{
 .three{
 display: block;
 margin:0 auto;
-max-width:50%;
+max-width:900px;
 }
 @media (min-width:1050px){
   .img-little{
